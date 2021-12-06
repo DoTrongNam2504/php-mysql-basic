@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteRule "index.html" "index.php"
+RewriteRule "^danh-muc/([0-9]+).html$" "?trang=danhmuc&id=$1"
+RewriteRule "^thuong-hieu/([0-9]+).html$" "?trang=thuonghieu&brand_id=$1"
+
+RewriteRule "^san-pham/([0-9]+)/([a-zA-Z0-9]+).html$" "?trang=chitiet&id=$1&product_name=$2"
+
+RewriteRule "^([a-zA-Z0-9]+).html$" "?trang=$1"
